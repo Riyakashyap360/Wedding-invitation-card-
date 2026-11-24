@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Aarav Weds Ananya</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080810;--navy:#0B1026;--royal:#172554;--violet:#6D28D9;--purple:#32105C;--lav:#A78BFA;--plat:#F5F3FF;--silver:#BFC3D9;--line:rgba(191,195,217,.22);color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--black:#080810}}
+:root[data-theme="dark"]{--black:#080810}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--black);color:var(--plat);font-family:Inter,system-ui,sans-serif;font-weight:300;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;margin:0}
+.eyebrow{font-size:10.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--lav);font-weight:500}
+.it{font-style:italic;color:var(--silver)}
+.metal{background:linear-gradient(120deg,#fff,#BFC3D9 40%,#A78BFA 70%,#F5F3FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+section{position:relative;z-index:2;padding:84px 22px;max-width:560px;margin:auto;text-align:center}
+.bgwrap{position:relative}
+.bgwrap::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,var(--black),var(--navy) 35%,var(--black));opacity:.0}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;padding:70px 22px;background:radial-gradient(120% 70% at 50% 0%,var(--royal) 0%,var(--navy) 45%,var(--black) 100%)}
+.hero::after{content:"";position:absolute;inset:18px;border:1px solid var(--line);pointer-events:none}
+.hero h1{font-size:clamp(58px,17vw,104px);line-height:.95;letter-spacing:.01em}
+.hero .amp{font:italic 400 34px 'Cormorant Garamond',serif;color:var(--lav);margin:6px 0}
+.hero p{max-width:300px;font-size:12.5px;line-height:1.8;color:var(--silver);margin:12px auto}
+.rule{width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--silver),transparent);margin:22px auto}
+.scrollcue{position:absolute;bottom:34px;font-size:10px;letter-spacing:.3em;color:var(--silver);text-transform:uppercase;animation:fl 2.6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(7px);opacity:.5}}
+#splash{position:fixed;inset:0;z-index:60;background:var(--black);display:grid;place-items:center;transition:opacity 1.1s ease,visibility 1.1s;cursor:pointer;text-align:center}
+#splash.go{opacity:0;visibility:hidden}
+#splash .m{width:92px;height:92px;border:1px solid var(--silver);border-radius:50%;display:grid;place-items:center;font:italic 500 32px 'Cormorant Garamond',serif;margin:0 auto 20px;box-shadow:0 0 50px rgba(109,40,217,.35);animation:gl 3s ease-in-out infinite}
+@keyframes gl{50%{box-shadow:0 0 80px rgba(109,40,217,.6)}}
+h2{font-size:clamp(34px,9vw,46px);margin:10px 0 28px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.rv.in{opacity:1;transform:none}
+.glass{background:linear-gradient(145deg,rgba(23,37,84,.55),rgba(50,16,92,.35));border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:4px}
+/* pull to reveal */
+.scroll{width:min(88%,320px);margin:0 auto}
+.rod{height:12px;border-radius:6px;background:linear-gradient(#e9e9f5,#9aa0bd 55%,#5b6080);box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.paper{height:0;overflow:hidden;transition:height .6s cubic-bezier(.2,.8,.2,1);border-left:1px solid var(--line);border-right:1px solid var(--line);background:linear-gradient(180deg,var(--royal),var(--purple))}
+.paper .in{padding:26px 10px}
+.paper .d{font-size:84px;line-height:1}
+.tassel{width:2px;height:46px;margin:0 auto;background:var(--silver);position:relative;cursor:grab;touch-action:none;padding:0 18px;background-clip:content-box}
+.tassel::after{content:"";position:absolute;left:50%;bottom:-14px;width:16px;height:26px;transform:translateX(-50%);border-radius:3px 3px 9px 9px;background:linear-gradient(var(--lav),var(--violet))}
+.hint{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver);margin-top:28px}
+.count{display:flex;justify-content:center;gap:8px;margin:30px 0 26px}
+.count div{flex:1;max-width:84px;padding:14px 2px}
+.count b{display:block;font:500 34px 'Cormorant Garamond',serif;transition:transform .3s,opacity .3s}
+.count b.t{transform:translateY(-4px);opacity:.4}
+.count span{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--silver)}
+.btn{display:inline-block;font:500 11px Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;padding:16px 28px;border:1px solid var(--silver);color:var(--plat);background:transparent;text-decoration:none;cursor:pointer;transition:all .3s;margin:5px;min-height:48px}
+.btn:hover,.btn:focus-visible{background:var(--plat);color:var(--black);outline:none}
+.btn:active{transform:scale(.96)}
+.btn.vio{background:linear-gradient(120deg,var(--violet),var(--purple));border-color:var(--lav)}
+.btn.vio:hover{background:var(--lav);color:var(--black)}
+/* events */
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 22px 22px;margin:0 -22px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.ev{flex:0 0 76%;scroll-snap-align:center;padding:34px 20px 26px;text-align:center;position:relative;overflow:hidden;transition:transform .4s,border-color .4s;--a:var(--violet)}
+.ev::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 60% at 50% 0%,color-mix(in srgb,var(--a) 55%,transparent),transparent 70%);opacity:.7}
+.ev>*{position:relative}
+.ev:hover,.ev:active{transform:translateY(-6px);border-color:var(--lav)}
+.ev .ic{width:54px;height:54px;border:1px solid var(--silver);border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;font-size:20px;color:var(--plat)}
+.ev .dt{font-size:10px;letter-spacing:.3em;color:var(--lav);text-transform:uppercase}
+.ev h3{font-size:30px;margin:8px 0 10px}
+.ev p{margin:3px 0;font-size:12.5px;color:var(--silver);line-height:1.6}
+.ev .dc{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase}
+.dots{display:flex;justify-content:center;gap:7px}
+.dots i{width:5px;height:5px;border-radius:50%;background:var(--line);transition:all .3s}
+.dots i.on{width:20px;border-radius:3px;background:var(--lav)}
+/* story */
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.ph{aspect-ratio:3/4;display:grid;place-items:center;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--silver);background:linear-gradient(160deg,var(--royal),var(--purple));border:1px solid var(--line);border-radius:90px 90px 4px 4px}
+.ph:nth-child(2){margin-top:34px}
+.quote{font:italic 400 22px/1.5 'Cormorant Garamond',serif;color:var(--silver);margin:30px 0 0}
+/* venue */
+.venue{padding:34px 22px;background:linear-gradient(160deg,rgba(23,37,84,.6),rgba(8,8,16,.8))}
+.venue h3{font-size:34px;margin:8px 0}
+.venue p{color:var(--silver);font-size:13px;line-height:1.8;margin:4px 0 20px}
+/* rsvp */
+.rsvp input{width:100%;max-width:320px;padding:15px;background:transparent;border:0;border-bottom:1px solid var(--silver);color:var(--plat);font:400 15px Inter,sans-serif;text-align:center;margin-bottom:22px;border-radius:0}
+.rsvp input:focus{outline:none;border-color:var(--lav)}
+.rsvp input::placeholder{color:var(--silver);opacity:.6}
+#done{display:none;padding:34px 20px;animation:up .8s both}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+footer{position:relative;z-index:2;padding:40px 22px calc(60px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--silver);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+@media(min-width:800px){.ev{flex-basis:300px}section{max-width:760px}.rail{justify-content:safe center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="splash" role="button" tabindex="0" aria-label="Open invitation"><div><div class="m">A&amp;A</div><div class="eyebrow">Tap to open</div></div></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<section class="hero">
+  <div class="eyebrow rv">Together with their families</div>
+  <div class="rule rv"></div>
+  <h1 class="metal rv">Aarav</h1>
+  <div class="amp rv">&amp;</div>
+  <h1 class="metal rv">Ananya</h1>
+  <div class="rule rv"></div>
+  <p class="rv">Son of Mr. Rajesh Sharma &amp; Mrs. Sunita Sharma<br>Daughter of Mr. Vikram Mehta &amp; Mrs. Kavita Mehta</p>
+  <p class="it serif rv" style="font-size:19px">request the pleasure of your company at their wedding</p>
+  <div class="scrollcue">Scroll</div>
+</section>
+
+<section id="date">
+  <div class="eyebrow rv">Save the date</div>
+  <h2 class="rv">Pull to <span class="it">reveal</span></h2>
+  <div class="scroll rv">
+    <div class="rod"></div>
+    <div class="paper" id="paper"><div class="in">
+      <div class="eyebrow">Saturday</div>
+      <div class="serif d metal">12</div>
+      <div class="serif" style="font-size:26px">December 2026</div>
+      <div style="font-size:11px;letter-spacing:.14em;color:var(--silver);margin-top:10px">PHERAS 10:30 PM · RAJ VILAS PALACE</div>
+    </div></div>
+    <div class="tassel" id="tassel" role="button" aria-label="Pull to reveal the date" tabindex="0"></div>
+  </div>
+  <div class="hint" id="hint">Drag or tap the tassel</div>
+  <div class="count glass rv" id="count" aria-live="off"></div>
+  <a class="btn rv" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aarav+Weds+Ananya&dates=20261212T170000Z/20261212T230000Z&location=Raj+Vilas+Palace,+Amer+Road,+near+Jal+Mahal,+Jaipur+302002">Add to calendar</a>
+</section>
+
+<section id="events">
+  <div class="eyebrow rv">Swipe through the celebrations</div>
+  <h2 class="rv">Wedding <span class="it">Festivities</span></h2>
+  <div class="rail rv" id="rail">
+    <article class="glass ev" style="--a:#6D28D9"><div class="ic">✦</div><div class="dt">Wed · 9 Dec · 10:00 AM</div><h3>Mata Pujan</h3><p>Sharma Residence, Malviya Nagar</p><div class="dc">Traditional wear</div></article>
+    <article class="glass ev" style="--a:#172554"><div class="ic">❋</div><div class="dt">Thu · 10 Dec · 12:00 Noon</div><h3>Mehendi</h3><p>The Courtyard, Raj Vilas Palace</p><div class="dc">Soft pastels</div></article>
+    <article class="glass ev" style="--a:#A78BFA"><div class="ic">☀</div><div class="dt">Fri · 11 Dec · 11:00 AM</div><h3>Haldi</h3><p>Poolside Lawn, Raj Vilas Palace</p><div class="dc">Whites &amp; light tones</div></article>
+    <article class="glass ev" style="--a:#32105C"><div class="ic">♪</div><div class="dt">Fri · 11 Dec · 7:30 PM</div><h3>Sangeet</h3><p>Durbar Hall, Raj Vilas Palace</p><div class="dc">Glam &amp; jewel tones</div></article>
+    <article class="glass ev" style="--a:#4C1D95"><div class="ic">⚭</div><div class="dt">Sat · 12 Dec · 8:30 PM</div><h3>Baraat &amp; Pheras</h3><p>Raj Vilas Palace, Jaipur</p><div class="dc">Royal ethnic</div></article>
+    <article class="glass ev" style="--a:#BFC3D9"><div class="ic">❖</div><div class="dt">Sun · 13 Dec · 8:00 PM</div><h3>Grand Reception</h3><p>Rambagh Lawns, Jaipur</p><div class="dc">Black tie / Indo-western</div></article>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section id="story">
+  <div class="eyebrow rv">Our story</div>
+  <h2 class="rv">Two hearts, <span class="it">one journey</span></h2>
+  <div class="sg rv"><div class="ph">Photo</div><div class="ph">Photo</div></div>
+  <p class="quote rv">Your story and photographs will appear here.</p>
+</section>
+
+<section id="venue">
+  <div class="eyebrow rv">Location</div>
+  <h2 class="rv">How to <span class="it">reach</span></h2>
+  <div class="glass venue rv">
+    <div class="eyebrow">The venue</div>
+    <h3>Raj Vilas Palace</h3>
+    <p>Amer Road, near Jal Mahal<br>Jaipur 302002</p>
+    <a class="btn vio" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Raj+Vilas+Palace+Amer+Road+Jaipur+302002">Get directions</a>
+  </div>
+</section>
+
+<section class="rsvp" id="rsvp">
+  <div class="eyebrow rv">Kindly respond</div>
+  <h2 class="rv">Will you <span class="it">join us?</span></h2>
+  <div id="form" class="rv">
+    <input id="guest" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name">
+    <div><button class="btn vio" data-r="yes">Joyfully accepts</button><button class="btn" data-r="no">Regretfully declines</button></div>
+  </div>
+  <div id="done" class="glass"><div class="eyebrow" id="dEy"></div><h3 class="serif" id="dT" style="font-size:32px;margin:10px 0"></h3><p id="dP" style="color:var(--silver);font-size:13px;line-height:1.7"></p>
+    <a class="btn" id="share" target="_blank" rel="noopener" href="#">Send reply on WhatsApp</a><br><button class="btn" id="chg" style="border-color:transparent;opacity:.7">Change response</button></div>
+</section>
+<footer>Sharma &amp; Mehta families</footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const open=()=>{$('#splash').classList.add('go');setTimeout(()=>$$('.hero .rv').forEach((e,i)=>setTimeout(()=>e.classList.add('in'),i*140)),400)};
+$('#splash').onclick=open;$('#splash').onkeydown=e=>{if(e.key==='Enter'||e.key===' ')open()};setTimeout(open,6000);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!e.target.closest('.hero')){e.target.classList.add('in')}}),{threshold:.15});
+$$('.rv').forEach(e=>io.observe(e));
+/* pull to reveal */
+const paper=$('#paper'),tassel=$('#tassel'),MAX=210;let h=0,drag=false,y0=0;
+const show=()=>{paper.style.height=MAX+'px';h=MAX;$('#hint').textContent='See you there';};
+tassel.onpointerdown=e=>{drag=true;y0=e.clientY-h;tassel.setPointerCapture(e.pointerId);paper.style.transition='none'};
+tassel.onpointermove=e=>{if(!drag)return;h=Math.max(0,Math.min(MAX,e.clientY-y0));paper.style.height=h+'px'};
+tassel.onpointerup=tassel.onpointercancel=()=>{if(!drag)return;drag=false;paper.style.transition='';if(h>MAX*.4)show();else{h=0;paper.style.height='0'}};
+tassel.onclick=()=>{if(!h)show()};tassel.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')show()};
+/* countdown */
+const T=new Date('2026-12-12T22:30:00+05:30').getTime(),last={};
+function tick(){const d=Math.max(0,T-Date.now()),v=[[Math.floor(d/864e5),'Days'],[Math.floor(d%864e5/36e5),'Hrs'],[Math.floor(d%36e5/6e4),'Min'],[Math.floor(d%6e4/1e3),'Sec']];
+if(!$('#count').children.length)$('#count').innerHTML=v.map(x=>`<div><b class="serif metal"></b><span>${x[1]}</span></div>`).join('');
+$$('#count b').forEach((b,i)=>{const t=String(v[i][0]).padStart(2,'0');if(last[i]!==t){last[i]=t;b.textContent=t;b.classList.add('t');setTimeout(()=>b.classList.remove('t'),180)}})}
+tick();setInterval(tick,1000);
+/* events dots */
+const rail=$('#rail'),cards=$$('.ev'),dots=$('#dots');
+dots.innerHTML=cards.map(()=>'<i></i>').join('');
+function upd(){const c=rail.scrollLeft+rail.clientWidth/2;let b=0,m=1e9;cards.forEach((x,i)=>{const d=Math.abs(x.offsetLeft+x.offsetWidth/2-c);if(d<m){m=d;b=i}});[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===b))}
+rail.addEventListener('scroll',upd,{passive:true});upd();
+/* rsvp */
+const KEY='aa-rsvp';
+function view(r,n){$('#form').style.display='none';const d=$('#done');d.style.display='block';const y=r==='yes';
+$('#dEy').textContent=y?'Response received':'Response received';
+$('#dT').textContent=y?'We can’t wait to celebrate with you':'You will be missed';
+$('#dP').textContent=y?'Your joyful acceptance has been noted.':'Thank you for letting us know.';
+const msg=`${n?n+': ':''}${y?'Joyfully accepts':'Regretfully declines'} – Aarav & Ananya’s wedding, 12 December 2026.`;
+$('#share').href='https://wa.me/?text='+encodeURIComponent(msg)}
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s)view(s.r,s.n)}catch(e){}
+$$('[data-r]').forEach(b=>b.onclick=()=>{const n=$('#guest').value.trim(),r=b.dataset.r;try{localStorage.setItem(KEY,JSON.stringify({r,n}))}catch(e){}view(r,n)});
+$('#chg').onclick=()=>{try{localStorage.removeItem(KEY)}catch(e){}$('#done').style.display='none';$('#form').style.display='block'};
+/* particles */
+const cv=$('#fx'),cx=cv.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2);let P=[],run=true;
+function rs(){cv.width=innerWidth*dpr;cv.height=innerHeight*dpr}rs();addEventListener('resize',rs);
+const N=innerWidth<600?34:60;
+for(let i=0;i<N;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*1.6+.4,s:Math.random()*.00018+.00005,p:Math.random()*6,c:Math.random()>.6?'167,139,250':'191,195,217'});
+document.addEventListener('visibilitychange',()=>{run=!document.hidden;if(run)loop()});
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function loop(){if(!run)return;cx.clearRect(0,0,cv.width,cv.height);
+P.forEach(p=>{p.y-=p.s*16;p.p+=.01;if(p.y<-.02){p.y=1.02;p.x=Math.random()}
+const a=.25+.35*Math.sin(p.p);cx.beginPath();cx.fillStyle=`rgba(${p.c},${a})`;cx.arc((p.x+Math.sin(p.p)*.01)*cv.width,p.y*cv.height,p.r*dpr,0,6.3);cx.fill()});
+if(!RM)requestAnimationFrame(loop)}
+loop();
+</script>
+</body>
+</html>
